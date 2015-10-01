@@ -18,7 +18,7 @@ include_once('updater.php');
 if (is_admin()) { // note the use of is_admin() to double check that this is happening in the admin
         $config = array(
             'slug' => plugin_basename(__FILE__), // this is the slug of your plugin
-            'proper_folder_name' => 'plugin-name', // this is the name of the folder your plugin lives in
+            'proper_folder_name' => 'plugin', // this is the name of the folder your plugin lives in
             'api_url' => 'https://api.github.com/repos/henkdevries/plugin', // the GitHub API url of your GitHub repo
             'raw_url' => 'https://raw.github.com/henkdevries/plugin', // the GitHub raw url of your GitHub repo
             'github_url' => 'https://github.com/henkdevries/plugin', // the GitHub url of your GitHub repo
