@@ -8,8 +8,12 @@ Author: Your Name
 Author URI: yoururl
 */
 
-include_once('updater.php');
 
+
+add_action( 'init', 'gh_updater_test_plugin' );
+function gh_updater_test_plugin() {
+
+include_once('updater.php');
 
 if (is_admin()) { // note the use of is_admin() to double check that this is happening in the admin
         $config = array(
@@ -28,7 +32,7 @@ if (is_admin()) { // note the use of is_admin() to double check that this is hap
         new WP_GitHub_Updater($config);
     }
 
-
+}
 
 
 
