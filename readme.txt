@@ -1,4 +1,5 @@
 === Your Site's Functionality Plugin ===
+~Current Version:0.2~
 Requires at least: 3.1
 Tested up to: 3.1
 Stable tag: 0.1
